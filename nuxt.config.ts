@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
   vite: {
+    server: {
+      cors: {
+        origin: "https://www.owlbear.rodeo",
+      },
+    },
     plugins: [ tailwindcss(), ],
   },
   modules: [

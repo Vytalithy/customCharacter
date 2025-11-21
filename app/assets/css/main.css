@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+body {
+  @apply flex justify-center;
+}
+
+div#app {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+div#app > * {
+  @apply text-center;
+}
+
+.bg-img {
+  margin-top: 50px;
+  aspect-ratio: 16/9;
+  border-radius: 4em;
+  height: 1550px;
+  border: 10px solid var(--color-blue-400);
+  background-size: cover;
+}
+.bg1 {
+  background-image: url('/images/HKRPG_bg1.png');
+}
+.bg2 {
+  background-image: url('/images/HKRPG_bg2.png');
+}
+.bg3 {
+  background-image: url('/images/HKRPG_bg3.png');
+}
+.dwn-btn {
+  color: var(--color-orange-400);
+}
+.fixed-nav {
+  position: fixed;
+  width: auto;
+  height: auto;
+  bottom: 5% !important;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+.fixed-btn {
+  margin-top: 16px;
+  border-radius: 100%;
+  padding: 20px;
+  @apply text-center;
+}
+.input-check {
+  position: relative;
+  width: calc(100% - 10px) !important;
+  height: calc(100% - 10px) !important;
+}
+
+.input-check * {
+  border-radius: 6px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.input-container {
+  position: absolute !important;
+  @apply flex justify-center items-center;
+}
+.input-container .input-box {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+.input-box {
+  font-size: 24px;
+  font-weight: bold;
+  border: 4px solid;
+  border-radius: 0.3em;
+  border-color: var(--color-yellow-200);
+  @apply hover:opacity-50 bg-white/60 text-center text-black;
+}
+.input-select {
+  width: calc(100% - 10px) !important;
+  height: calc(100% - 10px) !important;
+  & > * {
+    width: 100% !important;
+    height: 100% !important;
+    & > * {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+.plus-btn {
+  color: var(--color-gray-100);
+}
